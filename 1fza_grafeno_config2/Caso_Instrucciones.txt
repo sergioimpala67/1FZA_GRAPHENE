@@ -1,0 +1,35 @@
+Simulacion de biocompatibilidad entre proteina 1fza (mallado en NanoShaper) con membrana de grafeno (mallado con NanoShaper) 
+con dipolo impuesto en el interior (config2).
+
+Como ejecutar:
+
+pasos:
+
+A) 1fza Aislada
+
+1.- python generador_config_file_modif.py 1fza_isolated 1fza mesh/1fza_p1.4_de2.77_NanoShaper 0 180 2
+2.- screen -S 1fza_grafeno
+3.- python conformacion_initial.py 1fza_isolated 1fza_isolated/1fza 1fza_isolated/mesh/1fza_p1.4_de2.77_NanoShaper 0 180 1 2 1FZA_Isolated_0-180
+
+B) Grafeno Aislado
+
+1.- pygbe grafeno_isolated/
+2.- ctrl + a + d
+
+C)Interaccion 1fza grafeno
+
+1.- python generador_config_file_modif.py 1fza_interaction 1fza mesh/1fza_p1.4_de2.77_NanoShaper 0 180 2
+2.- screen -r 1fza_grafeno
+3.- python conformacion_initial.py 1fza_interaction 1fza_interaction/1fza 1fza_interaction/mesh/1fza_p1.4_de2.77_NanoShaper 0 180 1 2 Inicial_0-180
+4.- ctrl + a + d
+5.- python generador_config_file_modif.py 1fza_interaction 1fza mesh/1fza_p1.4_de2.77_NanoShaper 0 180 2
+6.- python conformacion_interaction.py 1fza_interaction 1fza_interaction/1fza 1fza_interaction/mesh/1fza_p1.4_de2.77_NanoShaper 0 180 46 2 Interaccion_0-180
+
+#Una vez termine la simulacion: Aprox 10 dias.
+
+D) Post_procesamiento
+
+1.- python post_ejecucion.py
+
+# se generan archivos inputs para codigo jupyter que permite obtener distribucion de probabilidades para las distintas conformaciones.
+
