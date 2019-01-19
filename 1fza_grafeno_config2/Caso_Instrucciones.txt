@@ -1,3 +1,5 @@
+INSTRUCCIONES:
+
 Simulacion de biocompatibilidad entre proteina 1fza (mallado en NanoShaper) con membrana de grafeno (mallado con NanoShaper) 
 con dipolo impuesto en el interior (config2).
 
