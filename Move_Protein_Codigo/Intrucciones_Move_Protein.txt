@@ -1,0 +1,12 @@
+Si se requiere modificar orientacion y posicion de cualquier proteina, utilizar codigo denominado como move_protein.py
+
+Este codigo orienta y traslada a una proteina cualquiera ubicada un cierta parte del espacio, en base a los siguientes Parametros.
+
+1.- Alpha_Tilt: Angulo entre el vector momento dipolar de la proteina y el eje y. Varia entre 0-180°
+2.- Alpha_Rot: Angulo de rotación de la proteina. Varia entre 0-360°
+3.- h: Distancia entre proteina y coordenada y=0
+
+Para Correr el Codigo.
+python nombre_archivo_mesh nombre_archivo_pqr Alpha_Rot Alpha_Tilt h
+
+
