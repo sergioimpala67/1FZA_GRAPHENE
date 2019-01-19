@@ -1,0 +1,9 @@
+Abrir Terminal.
+Dentro de esta carpeta (1FZA_Grafeno_NanoShaper) esta el programa NanoShaper.
+Para Correr y generar malas se requiere un archivo de configuración. Revisar ejemplo en carpetas 1FZA o Grafeno_Config2.
+
+./ NanoShaper archivo_config_nanoshaper
+
+Ejemplo:
+
+./ NanoShaper 1FZA/config_NanoShaper_1fza
