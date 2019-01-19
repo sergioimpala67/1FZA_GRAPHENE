@@ -1,0 +1,13 @@
+Como Actualizar Archivos en repositorio GitHub.
+cd git_workspace/1FZA_GRAPHENE
+1.- git status
+2.- git checkout archivosycarpetasqueyanoesten/ #si es que lo hay
+3.- git add archivoocarpeta/
+4.- git status
+5.- git pull (para actualizar cambios)
+6.- git push -u origin master
+7.- git commit -m "texto que quieras" CarpetaoArchivo/
+8.- git status
+9.- git push -u origin master
+10.- git status
+11.- ls
